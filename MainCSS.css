@@ -1,0 +1,42 @@
+body{
+    font-family: 'Alata', sans-serif !important;
+    /*background-image: url("images/darkDots.webp");*/
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+:root{
+    --weedDrawing: url("images/weedDrawing.jpg");
+}
+#logo{
+    position: static;
+    top: 0;
+    font-family: 'Londrina Outline', cursive;
+    color: white;
+    font-size: 500px;
+     background-image: var(--weedDrawing); 
+     /* background-repeat: no-repeat; */
+     /* background-size: 350px; */
+    /* background-color: black; */
+    filter: invert(1);
+    text-shadow: 0px 0px 10px white;
+    /* box-shadow: 0 150px 240px 20px white; */
+    /* margin-bottom: 300px; */
+    margin-top: 180px;
+}
+#crossZone{
+    font-size: 100px;
+}
+#zone{
+    margin-top: 300px;
+}
+#sexyBaleb{
+
+position: static;
+
+
+}
+#logoBackground{
+    background-image: var(--weedDrawing);
+
+}
