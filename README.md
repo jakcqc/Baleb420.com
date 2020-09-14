@@ -1,2 +1,2 @@
 # Baleb420.com
-BALEB420 official github
+$A website featuring skateboarding clips and community$
