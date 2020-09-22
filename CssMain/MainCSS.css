@@ -1,42 +1,88 @@
+@font-face{
+    /* font-family: Londrina Thin; */
+    src: url(Fonts/LondrinaSolid-Thin.ttf);
+}
 body{
-    font-family: 'Alata', sans-serif !important;
-    /*background-image: url("images/darkDots.webp");*/
-    background-color: black;
+    --glowEffect:-3px -3px 3px pink,3px 3px 3px lightblue ;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Alata', 'Londrina Thin', 'Londrina Outline' !important;
+    
+    /* background-color: black; */
+    /* background-image: linear-gradient(rgb(26, 26, 26),rgb(61, 61, 61), rgb(41, 41, 41), black, black , grey); */
+    /* background-color: white; */
     text-align: center;
     color: white;
 }
-:root{
-    --weedDrawing: url("images/weedDrawing.jpg");
+html, body{
+    overflow-x: hidden;
+}
+#topInfoBar{
+    color: white;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    /* overflow-x: hidden; */
+    background-color: black;
+    height: 45px;
+    font-size: 38px;
+    padding-bottom: 2px;
+    text-shadow: 0px 0px 1px white;
+
 }
 #logo{
-    position: static;
-    top: 0;
-    font-family: 'Londrina Outline', cursive;
-    color: white;
-    font-size: 500px;
-     background-image: var(--weedDrawing); 
-     /* background-repeat: no-repeat; */
-     /* background-size: 350px; */
-    /* background-color: black; */
-    filter: invert(1);
-    text-shadow: 0px 0px 10px white;
-    /* box-shadow: 0 150px 240px 20px white; */
-    /* margin-bottom: 300px; */
-    margin-top: 180px;
+    width: 100%;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    /* filter: blur(.1x); */
+    animation: blur 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll)* -1s);
+}
+@keyframes blur{
+    to{
+            filter: blur(30px);
+    }
 }
 #crossZone{
+    color: black;
+    position: relative;
+    /* z-index: 1; */
+    margin-top: -250px;
     font-size: 100px;
+    text-shadow: var(--glowEffect);
+    
+    animation: rotate 1s linear 1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll)* -3s);
+}
+@keyframes rotate{
+    to{
+        transform: rotate(180deg);
+        text-shadow: 0 0 10px darkred;
+        
+    }
 }
 #zone{
-    margin-top: 300px;
+    
+    text-shadow: var(--glowEffect);
+    margin-top: -75px;
+    font-size: 110px;
+    background-image: linear-gradient(rgb(160, 113, 121),pink,white,white,white);
 }
-#sexyBaleb{
-
-position: static;
-
-
+#zoneBar{
+    position: relative;
+    left: 0;
+    background-color: black;
+    height: 120px;
+    padding: 2px;
+    margin-top: 80px;
+    padding-bottom: 15px;
+    box-shadow:  0px 0px 5px 5px black, var(--glowEffect), 0px 0px 3px white;
+    margin-bottom: 50px;
+    
 }
-#logoBackground{
-    background-image: var(--weedDrawing);
 
-}
