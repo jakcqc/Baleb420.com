@@ -1,3 +1,3 @@
 # Baleb420.com
-A website featuring skateboarding clips and community
-Made by Austin C., Jeffrey K., Alec G.
+An abstract website showing off art, creation, and skateboarding.
+Made by Jeffrey Kerley.
